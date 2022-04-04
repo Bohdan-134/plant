@@ -123,19 +123,19 @@ const loginBtn = document.getElementById('btn-login');
 const registrationBtn = document.getElementById('btn-registration');
 
 registrationBtn.onclick = () => {
-    openModal(htmlContentsModal.htmlContentregistrationModal);
+    openModal(htmlContentsModal.htmlContentregistrationModal, 'modal-wrapper-registration__open', 'modal-wrapper-registration__close');
 }
 
 loginBtn.onclick = () => {
-    openModal(htmlContentsModal.htmlContentLoginModal);
+    openModal(htmlContentsModal.htmlContentLoginModal, 'modal-wrapper-login__open', 'modal-wrapper-login__close');
 }
 
-function openModal(htmlContent) {
+function openModal(htmlContent, openClassName, closeClassName) {
     let modalWrapper = document.createElement('div');
-    modalWrapper.classList.add('modal-wrapper', 'open-modal');
+    modalWrapper.classList.add('modal-wrapper', `${openClassName}`);
     modalWrapper.innerHTML = `
     <div class="modal-window">
-        <button id="modal-login__close" onclick="closeModal()">
+        <button id="modal-login__close" onclick="closeModal('${openClassName}', '${closeClassName}')">
             <i class="bx bx-x"></i>
         </button>
         ${htmlContent}
@@ -160,15 +160,30 @@ const htmlContentsModal = {
         <input class="registration-password" type="text" placeholder="password..." />
         <input class="registration-password__confirm" type="text" placeholder="Confirm password..." />
         <input type="submit" value="Sign up" id="sign-up" /></form>
+    `,
+    htmlBurgerMenu: `
+    <nav class="header-nav">
+        <ul>
+            <li> <a href="./page/page404.html">Home</a></li>
+            <li> <a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li> <a href="#">Blog</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-login-btn-wrapper">
+        <button id="btn-login">login</button>
+        <button class="btn" id="btn-registration">Sign Up</button>
+    </div>
     `
 }
 
 
-function closeModal() {
+function closeModal(openClassName, closeClassName) {
     const modalWrapper = document.querySelector('.modal-wrapper');
-    modalWrapper.classList.remove('open-modal');
-    modalWrapper.classList.add('close-modal');
-    setTimeout(() => modalWrapper.remove(), 1500);
+    modalWrapper.classList.remove(`${openClassName}`);
+    modalWrapper.classList.add(`${closeClassName}`);
+    setTimeout(() => modalWrapper.remove(), 2000);
 }
 
 // collection btn
@@ -181,3 +196,10 @@ seeAllBtn.addEventListener('mouseleave', (e) => console.log(e.path[0].classList.
 window.addEventListener('scroll', function() {
     if (window.pageYOffset >= 1000) document.querySelector('.about-us__wrapper-img').classList.add('about-us__wrapper-img-active');
 })
+
+
+/* ----------burger-menu---------- */
+
+/* const openMenuBtn = document.getElementById('burger-menu');
+
+openMenuBtn.addEventListener('click', () => openModal(htmlContentsModal.htmlBurgerMenu)) */

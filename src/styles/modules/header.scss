@@ -16,6 +16,11 @@
     @include flex(row, null, center);
 }
 
+#burger-menu {
+    background-color: transparent;
+    font-size: 25px;
+}
+
 .header-nav {
     ul {
         @include flex(row, null, center);
