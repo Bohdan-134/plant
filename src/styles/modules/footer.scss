@@ -1,0 +1,62 @@
+@import "../utils/main.utils.scss";
+#footer {
+    margin-top: 128px;
+    padding-bottom: 96px;
+}
+
+.footer-container {
+    @include flex(row, space-between, flex-start);
+}
+
+.footer-link {
+    max-width: 306px;
+    p {
+        margin: 24px 0px 22px;
+        color: #5A5A5A;
+    }
+}
+
+.footer-wrapper-link {
+    max-width: 176px;
+    width: 100%;
+    @include flex(row, space-between, null);
+    .f-link__item {
+        width: 48px;
+        height: 48px;
+        background-color: #EDFFDD;
+        @include flex(row, center, center);
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            background-color: $green;
+            svg {
+                path {
+                    fill: #EDFFDD;
+                }
+            }
+        }
+    }
+}
+
+.footer-navigation {
+    max-width: 645px;
+    width: 100%;
+    @include flex(row, space-between, null);
+}
+
+.footer-navigation__items {
+    .footer-navigation__item-title {
+        margin-bottom: 24px;
+        @include font($dm, 24px, 700, 31px, $black);
+    }
+    .footer-navigation__item {
+        margin-bottom: 12px;
+        a {
+            color: #5A5A5A;
+            position: relative;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}

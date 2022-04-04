@@ -1,0 +1,127 @@
+@import "../utils/main.utils.scss";
+.header {
+    padding-top: 40px;
+}
+
+.header-container {
+    @include flex(row, space-between, center);
+}
+
+.logo {
+    @include font($nunito, 24px, bold, 33px, $black);
+    cursor: pointer;
+}
+
+.header-nav-bar {
+    @include flex(row, null, center);
+}
+
+.header-nav {
+    ul {
+        @include flex(row, null, center);
+        margin-right: 137px;
+        li {
+            margin-right: 48px;
+            position: relative;
+            a {
+                @include font($dm, 16px, normal, 21px, black);
+                cursor: pointer;
+                transition: 0.2s;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -7px;
+                left: 50%;
+                transform: translateX(-50%) scale(0);
+                width: 100%;
+                height: 2px;
+                background-color: $green;
+                transition: 0.2s;
+            }
+            &:hover {
+                &::before {
+                    transform: translateX(-50%) scale(1);
+                }
+                a {
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+.header-login-btn-wrapper {
+    @include flex(row, null, center);
+    #btn-login {
+        margin-right: 48px;
+        background-color: transparent;
+        @include font($dm, 16px, normal, 21px, $black);
+    }
+    #btn-registration {
+        @include font($dm, 14px, normal, 18px, $white);
+        width: 81px;
+        height: 42px;
+    }
+}
+
+//header-main
+.header-main {
+    margin-top: 96px !important;
+    @include flex(row, space-between, null)
+}
+
+.header-main__content {
+    max-width: 548px;
+    position: relative;
+}
+
+.header-text {
+    max-width: 512px;
+    margin: 24px 0px 41px 0px;
+}
+
+#btn-learn-more {
+    width: 160px;
+    height: 55px;
+    margin-bottom: 60px;
+}
+
+.header-info {
+    ul {
+        @include flex(row, space-between, center);
+        li {
+            @include flex(column, null, center);
+            .wrapper-num {
+                @include flex(row, null, center);
+                margin-bottom: 10px;
+                .number,
+                span {
+                    @include font($nunito, 36px, bold, 49px, $black);
+                }
+            }
+            .desk {
+                @include font($dm, 18px, normal, 23px, $black);
+            }
+        }
+    }
+}
+
+.img-leaves {
+    position: absolute;
+    bottom: 56px;
+    right: -139px;
+}
+
+.header-main__img {
+    position: relative;
+    width: 557px;
+    img {
+        position: absolute;
+        right: -69px;
+        bottom: -51px;
+    }
+}

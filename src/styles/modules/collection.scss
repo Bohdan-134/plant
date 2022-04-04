@@ -1,0 +1,54 @@
+@import "../utils/main.utils.scss";
+#collection {
+    margin-top: 154px;
+}
+
+.collection-container {
+    @include flex(row, space-between, null);
+}
+
+.collection-text__wrapper {
+    max-width: 390px;
+    .h3 {
+        font-size: 36px;
+    }
+    #see-collection__btn {
+        margin-top: 36px;
+        @include font($dm, 18px, 400, 23px, $gray);
+        @include flex(row, null, center);
+        img {
+            margin-left: 9px;
+        }
+    }
+}
+
+.see-collection-btn__active {
+    img {
+        position: relative;
+        animation: collection-arrow 1s infinite;
+    }
+}
+
+.collection-img__content {
+    max-width: 705px;
+    width: 100%;
+    @include flex(row, space-between, null);
+    .collection-img-wrapper {
+        width: 215px;
+        height: 100%;
+        @include flex(row, center, center);
+        cursor: pointer;
+        &:nth-child(1) {
+            background-color: #F6EDE8;
+        }
+        &:nth-child(2) {
+            background-color: #F0F1F6;
+        }
+        &:nth-child(3) {
+            background-color: #F6EDE8;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+}

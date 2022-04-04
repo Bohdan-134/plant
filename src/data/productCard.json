@@ -1,0 +1,33 @@
+[{
+        "imgSrc": "../img/our-product/our-product-img1.webp",
+        "title": "Outdoor Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Plants",
+        "bgColor": "#EAF2E5"
+    },
+    {
+        "imgSrc": "../img/our-product/our-product-img2.webp",
+        "title": "Monstera Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Plants",
+        "bgColor": "#F0EBE6"
+    },
+    {
+        "imgSrc": "../img/our-product/our-product-img3.webp",
+        "title": "Pottel Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Plants",
+        "bgColor": "#F0EBE6"
+    },
+    {
+        "imgSrc": "../img/our-product/our-product-img4.webp",
+        "title": "Indoor Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Plants",
+        "bgColor": "#E7EEED"
+    }
+]

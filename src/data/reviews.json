@@ -1,0 +1,37 @@
+[{
+        "imgSrc": "./img/reviews/reviews-avatar1.webp",
+        "userName": "Hasanul Islam",
+        "userJob": "Marketing CEO",
+        "userComment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at."
+    },
+    {
+        "imgSrc": "http://thenewcode.com/assets/images/thumbnails/sarah-parmenter.jpeg",
+        "userName": "Polina Miller",
+        "userJob": "Teacher",
+        "userComment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit"
+    },
+    {
+        "imgSrc": "https://www.gravatar.com/avatar/1b8fabaa8d66250a7049bdb9ecf44397?s=250&d=mm&r=x",
+        "userName": "Silas Richardson",
+        "userJob": "Programmer",
+        "userComment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlOyb8QttQ3hEJ5dOwriJDR4ucEDdGM_7Kyie6ZA0JnpJMJfTHfe4DdAKNbDQcTEg5_Aw&usqp=CAU",
+        "userName": "Farrah Young",
+        "userJob": "Web Designer",
+        "userComment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at. consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at."
+    },
+    {
+        "imgSrc": "https://www.secondcity.com/wp-content/uploads/2014/08/Quercioli_Dana_12.2012.jpg",
+        "userName": "Vance Griffin",
+        "userJob": "Photographer",
+        "userComment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at."
+    },
+    {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl60g6oKVerEKPde2ClN4-6ASK4Ds4KzlM0Y1N-K_bCgOCMBYZ019WUgRLOfNAqyyhnY&usqp=CAU",
+        "userName": "Noam Scott",
+        "userJob": "Video manager",
+        "userComment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at. consectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in eratconsectetur adipiscing elit. Eu, tempor, accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla at."
+    }
+]

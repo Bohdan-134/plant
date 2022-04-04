@@ -1,0 +1,164 @@
+@import "modules/about-us.scss";
+@import "modules/collection.scss";
+@import "modules/footer.scss";
+@import "modules/header.scss";
+@import "modules/instagram.scss";
+@import "modules/our-product.scss";
+@import "modules/reviews.scss";
+@import "modules/subscribe.scss";
+@import "utils/main.utils.scss";
+
+/* modal */
+
+.modal-wrapper {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 26, 26, 0.03);
+    backdrop-filter: blur(20px);
+    @include flex(row, center, center);
+}
+
+.modal-window {
+    width: 600px;
+    padding: 40px 0px;
+    background: rgba(6, 111, 20, 0.79);
+    backdrop-filter: blur(20px);
+    @include flex(column, null, center);
+    position: relative;
+    .modal-title {
+        @include font($nunito, 50px, bold, 68px, $white);
+        margin-bottom: 30px;
+    }
+    .modal-form {
+        @include flex(column, null, center);
+        input {
+            width: 450px;
+            height: 60px;
+        }
+        input[type="text"] {
+            @include font($dm, 15px, 300, 18px, $white);
+            background: rgba(255, 255, 255, 0.35);
+            padding: 0px 20px;
+            margin: 10px 0px;
+            &::placeholder {
+                @include font($dm, 15px, 300, 18px, $white);
+            }
+            &:hover {
+                background: rgba(255, 255, 255, 0.45);
+            }
+        }
+        #sign-in,
+        #sign-up {
+            @include font($nunito, 20px, bold, 34px, $white);
+            background-color: #143B19;
+            cursor: pointer;
+            margin-top: 10px;
+            &:hover {
+                background-color: #012907;
+            }
+        }
+    }
+}
+
+#modal-login__close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-color: transparent;
+    @include font(null, 40px, null, null, #143B19);
+}
+
+//animation open wrapper-modal
+.open-modal {
+    animation: modal-wrapper-open 0.5s;
+    .modal-window {
+        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        .modal-title {
+            animation: slide-in-bottom 0.5s 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        .login-form {
+            .login-username {
+                animation: slide-in-bottom 0.5s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            .login-password {
+                animation: slide-in-bottom 0.5s 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            #sign-in {
+                animation: slide-in-bottom 0.5s 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+        }
+        .registration-form {
+            .registration-username {
+                animation: slide-in-bottom 0.5s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            .registration-email {
+                animation: slide-in-bottom 0.5s 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            .registration-password {
+                animation: slide-in-bottom 0.5s 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            .registration-password__confirm {
+                animation: slide-in-bottom 0.5s 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            #sign-up {
+                animation: slide-in-bottom 0.5s 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+        }
+    }
+}
+
+.close-modal {
+    backdrop-filter: blur(0px);
+    animation: modal-wrapper-close 0.5s 0.8s backwards;
+    .modal-window {
+        animation: slide-out-bottom 0.5s 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        .modal-title {
+            animation: slide-out-bottom 0.5s 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        }
+        .login-form {
+            .login-username {
+                animation: slide-out-bottom 0.5s 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
+            .login-password {
+                animation: slide-out-bottom 0.5s 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
+            #sign-in {
+                animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
+        }
+        .registration-form {}
+    }
+}
+
+
+/* err-page */
+
+.err-main {
+    width: 100%;
+    height: 100vh;
+    @include flex(row, center, center);
+    .err-container {
+        @include flex(column, null, center);
+        h1 {
+            @include font($nunito, 200px, 400, 168px, $green);
+        }
+        span {
+            @include font($nunito, 40px, 400, 55px, $green);
+            margin: 15px 0px;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            @include flex(row, center, center);
+            background-color: #F4C300;
+            @include font($dm, 18px, 500, 23px, $white);
+            border-radius: 4px;
+            &:hover {
+                background-color: #d8ad01;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "../utils/main.utils.scss";
+#about-us {
+    margin-top: 128px;
+    .container {
+        max-width: 1100px;
+    }
+}
+
+.about-us__container {
+    @include flex(row, space-between, flex-start);
+}
+
+.about-us__wrapper-img {
+    width: 446px;
+    height: 440px;
+    background-color: $green;
+    position: relative;
+    img {
+        position: absolute;
+    }
+}
+
+.about-us__text-content {
+    max-width: 504px;
+    .about-us__up-title {
+        @include font($dm, 18px, 500, 23px, $green);
+    }
+    h3 {
+        margin: 12px 0px 24px 0px;
+    }
+    .about-us__text-wrapper {
+        p {
+            &:last-child {
+                margin: 16px 0px 42px 0px;
+            }
+        }
+    }
+    #about-us-rm-btn {
+        width: 155px;
+        height: 55px;
+    }
+}
+
+.about-us__wrapper-img-active {
+    img {
+        top: 40px;
+        left: 70px;
+        animation: about-us__wrapper-img-active 1s;
+    }
+}

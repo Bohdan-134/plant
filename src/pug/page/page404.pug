@@ -1,0 +1,11 @@
+include .././utils/mixin.pug
+
+doctype html
+html(lang="en")
+    +head('.././css/main.css', '404')
+    body 
+        main.err-main 
+            .err-container
+                h1 404
+                span Page not found
+                a(href="../index.html") Go to back

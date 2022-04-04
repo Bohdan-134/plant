@@ -1,0 +1,54 @@
+@import "../utils/main.utils.scss";
+#subscribe {
+    margin-top: 164px;
+    .container {
+        max-width: 1040px;
+    }
+}
+
+.subscribe-container {
+    background-color: #DFFFE3;
+    border-radius: 6px;
+    position: relative;
+    height: 320px;
+    @include flex(null, null, center);
+    padding-left: 60px;
+    img {
+        position: absolute;
+        right: 24px;
+        bottom: 0px;
+    }
+}
+
+.subscribe-content {
+    max-width: 480px;
+}
+
+.subscribe-text {
+    max-width: 458px;
+    margin: 12px 0px 30px;
+}
+
+.subscribe-form {
+    position: relative;
+    max-width: 451px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 4px;
+    padding: 8px;
+    @include flex(row, space-between, center);
+    input[type="text"] {
+        flex: 1;
+        padding: 0px 20px 0px 12px;
+    }
+    input[type="text"],
+    input[type="text"]::placeholder {
+        @include font($dm, 14px, 400, 18px, #5A5A5A);
+    }
+    input[type="submit"] {
+        width: 98px;
+        height: 40px;
+        cursor: pointer;
+        font-weight: 400;
+    }
+}

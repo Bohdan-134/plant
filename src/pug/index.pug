@@ -1,0 +1,21 @@
+include ./utils/mixin.pug
+
+doctype html
+html(lang="en")
+    +head('./css/main.css', Plant)
+    body  
+        include modules/header
+        main 
+            include modules/collection
+            include modules/about-us 
+            include modules/our-product
+            include modules/reviews
+            include modules/subscribe
+            include modules/instagram
+        include modules/footer
+        script(src='https://unpkg.com/swiper@8/swiper-bundle.min.js')
+        script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+        //script(src="./libs/swiper/swiper-bundle.min.js")
+        script(src="./libs/anime/anime.min.js")
+        script(src="./js/main.js") 
