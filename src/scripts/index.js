@@ -162,19 +162,19 @@ const htmlContentsModal = {
         <input type="submit" value="Sign up" id="sign-up" /></form>
     `,
     htmlBurgerMenu: `
-    <nav class="header-nav">
+    <nav class="menu-nav">
         <ul>
             <li> <a href="./page/page404.html">Home</a></li>
             <li> <a href="#">Services</a></li>
             <li><a href="#">About Us</a></li>
             <li> <a href="#">Blog</a></li>
             <li> <a href="#">Contact</a></li>
+            <li class="menu-login-btn-wrapper">
+                <button id="btn-login">login</button>
+                <button class="btn" id="btn-registration">Sign Up</button>
+            </li>
         </ul>
     </nav>
-    <div class="header-login-btn-wrapper">
-        <button id="btn-login">login</button>
-        <button class="btn" id="btn-registration">Sign Up</button>
-    </div>
     `
 }
 
@@ -200,6 +200,6 @@ window.addEventListener('scroll', function() {
 
 /* ----------burger-menu---------- */
 
-/* const openMenuBtn = document.getElementById('burger-menu');
+const openMenuBtn = document.getElementById('burger-menu');
 
-openMenuBtn.addEventListener('click', () => openModal(htmlContentsModal.htmlBurgerMenu)) */
+openMenuBtn.addEventListener('click', () => openModal(htmlContentsModal.htmlBurgerMenu, 'modal-wrapper-menu__open', 'modal-wrapper-menu__close'))
