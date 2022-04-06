@@ -10,12 +10,11 @@
 .our-product__tabs {
     @include flex(row, null, null);
     margin: 24px 0px 50px 0px;
-    .tabs-items {
-        a {
-            @include font($dm, 16px, 500, 21px, $gray);
-            &:hover {
-                color: $green;
-            }
+    button {
+        @include font($dm, 16px, 500, 21px, $gray);
+        background-color: transparent;
+        &:hover {
+            color: $green;
         }
         &:nth-child(2) {
             margin: 0px 24px;
@@ -25,6 +24,7 @@
 
 .wrapper-our-product__products {
     @include flex(row, null, null);
+    min-height: 283px;
     .card-product__item {
         width: 270px;
         height: 283px;
@@ -60,4 +60,8 @@
     width: 131px;
     height: 55px;
     margin-top: 40px;
+}
+
+.product-tab__active {
+    color: $green !important;
 }

@@ -7,16 +7,16 @@
         "bgColor": "#EAF2E5"
     },
     {
-        "imgSrc": "../img/our-product/our-product-img2.webp",
-        "title": "Monstera Plant",
-        "stars": 5,
-        "price": "$50.00",
-        "type": "New Plants",
-        "bgColor": "#F0EBE6"
+        "imgSrc": "../img/our-product/img7.webp",
+        "title": "Outdoor Plant",
+        "stars": 3,
+        "price": "$45.00",
+        "type": "New Arrivals",
+        "bgColor": "#EAF2E5"
     },
     {
-        "imgSrc": "../img/our-product/our-product-img3.webp",
-        "title": "Pottel Plant",
+        "imgSrc": "../img/our-product/our-product-img2.webp",
+        "title": "Monstera Plant",
         "stars": 5,
         "price": "$50.00",
         "type": "New Plants",
@@ -28,6 +28,70 @@
         "stars": 5,
         "price": "$50.00",
         "type": "New Plants",
+        "bgColor": "#E7EEED"
+    },
+    {
+        "imgSrc": "https://flyclipart.com/thumb2/bird-of-paradise-small-houseplant-chelsea-garden-center-872033.png",
+        "title": "Indoor Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "Sale",
+        "bgColor": "#E7EEED"
+    },
+    {
+        "imgSrc": "../img/our-product/our-product-img3.webp",
+        "title": "Pottel Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Plants",
+        "bgColor": "#F0EBE6"
+    },
+    {
+        "imgSrc": "https://i.pinimg.com/originals/e1/71/30/e1713085fbd6bc66eb502c60694a68d3.png",
+        "title": "abobus",
+        "stars": 2,
+        "price": "$532.00",
+        "type": "New Arrivals",
+        "bgColor": "#F0EBE6"
+    },
+    {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAv7jCeaDsxFWBRl6y6IWsW17kvXt0t2gYmFTJ5Or5F3ij7YIp3DfHfGb51ClyKo7pkhE&usqp=CAU",
+        "title": "Indoor Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "Sale",
+        "bgColor": "#E7EEED"
+    },
+    {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUNS_Iacp_8nQfnlnQO1VPW94R61s5gBPCF9FcmuZSbM7d61DQXR6NwYx6wGNMuHSxcs&usqp=CAU",
+        "title": "Pottel Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Arrivals",
+        "bgColor": "#F0EBE6"
+    },
+    {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWxk7dm5mM19_KaaCot1f5yriAfk9lW8VkVeDiYTycUtMP27MCS1iU3pAEBKkLZYq8QPc&usqp=CAU",
+        "title": "Indoor Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "Sale",
+        "bgColor": "#E7EEED"
+    },
+    {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD_7zRa1qB1KIcv7TVKObGqRbl0XBjsLhAcFmVQY6i3IUBXbmdDyYLjOBQ8ZSIxGuJinI&usqp=CAU",
+        "title": "Pottel Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "New Arrivals",
+        "bgColor": "#F0EBE6"
+    },
+    {
+        "imgSrc": "https://p1.hiclipart.com/preview/836/358/324/cactuses-and-plants-green-indoor-plant-png-clipart.jpg",
+        "title": "Indoor Plant",
+        "stars": 5,
+        "price": "$50.00",
+        "type": "Sale",
         "bgColor": "#E7EEED"
     }
 ]
